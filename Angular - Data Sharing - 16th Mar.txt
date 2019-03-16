@@ -1,0 +1,48 @@
+Data Sharing
+=====================
+->Local storage 
+	localStorage.setItem("key","value")
+
+	localStorage.getItem("key")
+
+
+	localStorage.removeItem("key")	
+	
+
+->
+	@Input 	: we send parent component data to child component
+
+	--where add child component
+	<app-childcomponent [childMessage]="parentMessage"></app-childcomponent>
+
+	
+	--in child component 
+	--import : Input
+	import { Component, OnInit,Input } from '@angular/core';
+
+
+	--receive data 
+	@Input() childMessage
+
+	--bind data 
+	
+<p>
+  Data from parent via @input {{childMessage}}
+</p>
+
+
+
+
+-> 
+	@output : we can get child component data on parenet component
+
+
+	
+
+-> 	
+	@ViewChild : Directly get data from any component. like sibling 
+
+-> 
+	Usine service
+
+			
